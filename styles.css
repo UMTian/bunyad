@@ -318,8 +318,12 @@ h1 span {
     width: 250px;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0) rotate(-15deg);
-    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) var(--delay);
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
     pointer-events: auto;
+}
+
+.in-view-services .service-card {
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) var(--delay);
 }
 
 .in-view-services .service-card:nth-child(1) {
