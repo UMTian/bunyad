@@ -373,7 +373,7 @@ function animate() {
 
   // Sync service reveal - sticky layout allows globe to center precisely
   const curScrollValue = material.uniforms.uScroll.value;
-  if (curScrollValue > 1.05) {
+  if (curScrollValue > 1.05 && curScrollValue <= 1.25) {
     servicesSection.classList.add('in-view-services');
   } else {
     servicesSection.classList.remove('in-view-services');
